@@ -235,7 +235,7 @@ function App() {
 
   // 语言选项
   const [lanState, setLanState] = useState(
-    {lanValue: "english"}
+    {lanValue: "chinese"}
   );
 
   const handleChange = (event) => {
@@ -262,11 +262,7 @@ function App() {
   // <form>能控制radio为一组。
   return (
     <div className='container'>
-      <h1 className="headerText">ChatIE </h1>
-      <p className='opensourceText'><a href="https://arxiv.org/pdf/2302.10205.pdf">ChatIE paper</a>&nbsp;|&nbsp;
-      <a href="https://github.com/cocacola-lab/ChatIE">ChatIE tool</a>🎉</p>
-      <p className='subheaderText'>ChatIE (Zero-Shot Information Extraction via Chatting with ChatGPT) is a open-source and powerful IE tool. Enhanced by ChatGPT and prompting, it aims  to automatically extract structured information from a raw sentence and make a valuable in-depth analysis of the input sentence.
-      We support the following functions:</p>
+      <h1 className="headerText">HXQ Information Extraction</h1>
       <div>
       <table>
       <tbody>
@@ -308,7 +304,7 @@ function App() {
           <input className="searchBar" placeholder="Input sentence..."></input>
           <input className="typeList" id="prompt1" placeholder="Optional,re/ner/ee type list;
           like {'singer':['song','person']}/['LOC']/{'Divorce':['Person','Time','Place']}"></input>
-          <input className="apiKeyTextField" type="password" placeholder="Optional, Enter your OpenAI access token..."></input>
+          <input className="apiKeyTextField" type="password" placeholder="Optional, Enter your access token..."></input>
           <button className="generateButton" onClick={createIE}>Generate</button>
           <button className="clearButton" onClick={clearState}>Clear</button>
         </div>
